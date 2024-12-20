@@ -4,12 +4,12 @@ class LinearSearch {
     > Run through entire array, if value is found search is terminated and returns True, else returns False.
     */
     public static boolean search(int[] arr, int val) {
-        for (int i = 0; i < arr.length; i++) {
-            if (val == arr[i]) {
-                return true;
+        for (int i = 0; i < arr.length; i++) {  // Cycle through the entire array
+            if (val == arr[i]) {                // If the current array element matches the search item
+                return true;                    // Return true
             }
         }
-        return false;
+        return false;                           // Item not present in array
     }
 
     // Utilities
